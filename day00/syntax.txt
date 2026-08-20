@@ -1,0 +1,16 @@
+let x = 5;              // imutável
+let mut y = 5;          // mutável
+const MAX: u32 = 100;   // constante, tipo obrigatório, SCREAMING_CASE
+
+println!("{}", x);      // Display
+println!("{:?}", tup);  // Debug (para tuplos, arrays, structs)
+println!("{x}");        // captura direta da variável
+
+fn nome(a: i32, b: i32) -> i32 {
+    a + b               // sem ponto e vírgula = valor de retorno
+}
+
+if cond { 1 } else { 2 }        // if é uma expressão
+for i in 1..=5 { }              // range inclusivo
+while cond { }
+loop { break valor; }           // loop pode devolver um valor
